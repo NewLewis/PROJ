@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.py.terminal.MainActivity">
+
+    <!--这里是每日账单界面的listview的adapter视图-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/daily_list_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:src="@color/colorWhite"/>
+        <TextView
+            android:id="@+id/daily_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一般"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/daily_list_img"
+            android:layout_alignBottom="@+id/daily_list_img"/>
+        <TextView
+            android:id="@+id/daily_list_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="0.00"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/daily_list_name"
+            android:layout_alignBottom="@+id/daily_list_img"/>
+        <TextView
+            android:id="@+id/daily_list_remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="这是很长很长很长很长很长很长很长很长很长很长很长很长的备注"
+            android:textSize="15dp"
+            android:layout_below="@+id/daily_list_name"
+            android:layout_alignLeft="@+id/daily_list_name"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

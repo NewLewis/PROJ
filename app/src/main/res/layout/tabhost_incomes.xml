@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--增加账目界面的tabhost的收入部分-->
+        <RelativeLayout
+            android:id="@+id/incomes_detail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#f5a623">
+            <ImageView
+                android:id="@+id/incomes_typePic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:padding="2dp"
+                android:src="@drawable/incomes_yiban"
+                android:background="@drawable/ms_img_bg"/>
+
+            <TextView
+                android:id="@+id/incomes_typeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:text="一般"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:clickable="true"
+                android:layout_toRightOf="@+id/incomes_typePic"/>
+            <TextView
+                android:id="@+id/incomes_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:text="￥0.00"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <TableLayout
+            android:id="@+id/incomes_type"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:stretchColumns="*"
+            android:layout_below="@+id/incomes_detail">
+            <TableRow>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+                    <ImageButton
+                        android:id="@+id/incomes_yiban"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/incomes_yiban"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一般"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+                    <ImageButton
+                        android:id="@+id/incomes_baoxiao"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/incomes_baoxiao"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="报销"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+                    <ImageButton
+                        android:id="@+id/incomes_gongzi"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/incomes_gongzi"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="工资"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+                    <ImageButton
+                        android:id="@+id/incomes_hongbao"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/incomes_hongbao"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="红包"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+                    <ImageButton
+                        android:id="@+id/incomes_jianzhi"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/incomes_jianzhi"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="兼职"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+                    <ImageButton
+                        android:id="@+id/incomes_jiangjin"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/incomes_jiangjin"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="奖金"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+                    <ImageButton
+                        android:id="@+id/incomes_touzi"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/incomes_touzi"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="投资"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/incomes_calculator"
+            android:background="#dcdcdc">
+            <TextView
+                android:id="@+id/incomes_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="2017 今天"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/incomes_remarks"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/remarks"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <TableLayout
+            android:id="@+id/incomes_calculator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_alignParentBottom="true">
+            <TableRow>
+                <Button android:id="@+id/incomes_cal1" android:text="1"/>
+                <Button android:id="@+id/incomes_cal2" android:text="2"/>
+                <Button android:id="@+id/incomes_cal3" android:text="3"/>
+                <Button android:id="@+id/incomes_add" android:text="+"/>
+            </TableRow>
+            <TableRow>
+                <Button android:id="@+id/incomes_cal4" android:text="4"/>
+                <Button android:id="@+id/incomes_cal5" android:text="5"/>
+                <Button android:id="@+id/incomes_cal6" android:text="6"/>
+                <Button android:id="@+id/incomes_sub" android:text="-"/>
+            </TableRow>
+            <TableRow>
+                <TableLayout
+                    android:layout_span="3"
+                    android:stretchColumns="*">
+                    <TableRow>
+                        <Button android:id="@+id/incomes_cal7" android:text="7"/>
+                        <Button android:id="@+id/incomes_cal8" android:text="8"/>
+                        <Button android:id="@+id/incomes_cal9" android:text="9"/>
+                    </TableRow>
+                    <TableRow>
+                        <Button android:id="@+id/incomes_clear" android:text="清零"/>
+                        <Button android:id="@+id/incomes_cal0" android:text="0"/>
+                        <Button android:id="@+id/incomes_point" android:text="."/>
+                    </TableRow>
+                </TableLayout>
+                <Button android:id="@+id/incomes_ok" android:text="OK" android:layout_height="match_parent"/>
+            </TableRow>
+        </TableLayout>
+</RelativeLayout>

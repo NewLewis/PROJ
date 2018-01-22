@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="140dp"
+    android:minHeight="140dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <LinearLayout
+        android:id="@+id/grid_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/default_grid"
+        >
+    <TextView
+        android:id="@+id/book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新建账本"
+        android:textSize="15dp"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/book_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0笔"
+        android:textSize="10dp"
+        android:textColor="@color/colorWhite" />
+    </LinearLayout>
+</LinearLayout>
